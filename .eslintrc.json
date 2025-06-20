@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "rules": {
+    // カスタムルール（日本語での開発規約に基づく）
+    "@typescript-eslint/no-unused-vars": "error",
+    "prefer-const": "error",
+    "no-var": "error"
+  }
+} 

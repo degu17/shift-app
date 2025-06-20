@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  /* コンテナサイズのカスタマイズ */
+  --container-2xl: 32rem;  /* 512px - より狭く */
+  --container-4xl: 48rem;  /* 768px - より狭く */
+  --container-5xl: 60rem;  /* 960px - 3列表示用 */
+  --container-6xl: 64rem;  /* 1024px - より狭く */
+  
+  /* カスタムカラーパレット（勤務表アプリ用） */
+  --color-primary-50: oklch(0.99 0.02 240);
+  --color-primary-500: oklch(0.6 0.12 250);
+  --color-primary-600: oklch(0.5 0.15 250);
+  --color-primary-700: oklch(0.4 0.18 250);
+  
+  /* シフト専用カラー */
+  --color-shift-day: oklch(0.95 0.04 75);
+  --color-shift-evening: oklch(0.93 0.06 45);
+  --color-shift-night: oklch(0.9 0.05 270);
+  
+  /* ステータスカラー */
+  --color-status-draft: oklch(0.96 0.02 210);
+  --color-status-confirmed: oklch(0.94 0.08 140);
+  --color-status-warning: oklch(0.95 0.04 75);
+  --color-status-error: oklch(0.95 0.05 15);
+  
+  /* カスタムフォント */
+  --font-family-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: #374151;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* カスタムコンポーネントスタイル */
+@utility btn-primary {
+  background-color: var(--color-primary-600);
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: var(--color-primary-700);
+  }
+}
+
+@utility btn-secondary {
+  background-color: rgb(229 231 235);
+  color: rgb(31 41 55);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: rgb(209 213 219);
+  }
+}
+
+@utility shift-cell {
+  border: 1px solid rgb(209 213 219);
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  min-height: 4rem;
+  transition: background-color 0.2s;
+}
+
+@utility shift-day {
+  background-color: var(--color-shift-day);
+}
+
+@utility shift-evening {
+  background-color: var(--color-shift-evening);
+}
+
+@utility shift-night {
+  background-color: var(--color-shift-night);
+} 
