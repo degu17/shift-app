@@ -14,7 +14,7 @@ export default function HomePage() {
             勤務表作成支援アプリ（テスト用）
           </h1>
           <p className="text-lg text-gray-600">
-            ※テスト用のため、一部機能とセキュリティ面は十分な実装をしていません。
+            ※テスト用のため、一部機能のみの実装となります。
           </p>
         </div>
 

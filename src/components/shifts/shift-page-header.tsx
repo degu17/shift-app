@@ -27,7 +27,7 @@ export default function ShiftPageHeader({
       <div>
         <h1 className="text-3xl font-bold text-gray-900">シフト作成</h1>
         <p className="text-gray-600 mt-1">
-          テスト用のため、休み希望などは反映されません。
+          テスト用のため、不具合等はご容赦ください。
         </p>
       </div>
       
